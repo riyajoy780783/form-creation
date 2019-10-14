@@ -1,0 +1,33 @@
+<!DOCTYPE html><!--defining the document -->
+<html><!--defines the root of html-->
+  <head><!--defines the information about the document-->
+    <title>Form</title>
+  </head> <!--for writing heading-->
+  <body>
+    <form><!--defines a form that is used to collect user input-->
+      <fieldset><!--tag is used to group related elements in a form-->
+        <legend>Your Details<legend><!--tag defines a caption for the <fieldset> element-->
+          Name : <input type="text"><br><!--<input type="text"> defines a one-line text input field-->
+          Email : <input type="text"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Your Review</legend>
+            How did you hear about us?<select name = "Browser"><!--The <select> element is used to create a drop-down list.-->
+            <option value="Google">Google</option><!--The <option> tags inside the <select> element define the available options in the list-->
+            <option value="Yahoo">Yahoo</option>
+            <option value="Bingo">Bingo</option></select><br>
+            <p>Would you visit again?</p>
+                <input type="radio" name="visit" value="Yes" checked>Yes<!--The <input type="radio"> defines a radiobutton-->
+                <input type="radio" name="visit"  value="No">No
+                <input type="radio" name="visit" value="May be">May be
+                <br>
+            <p>Comments:</p>
+              <textarea name="messege" rows="8" cols="50"></textarea><br>
+            <input type="checkbox" name="select" value="select" checked>Sign me for email updates <br><!--The <input type="checkbox"> defines a checkbox-->
+            <input type="Submit" value ="Submit Review">
+
+        </fieldset>
+    </form>
+  </body>
+
+</html>
